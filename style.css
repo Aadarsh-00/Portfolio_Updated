@@ -1,0 +1,160 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+.pfp {
+  position: relative ;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 450px;
+  height: auto;
+  display: block;
+  
+}
+
+
+
+.hero-img-wrapper{
+   position: relative;
+  /* display: inline-block; */
+  text-align: center;
+  display: flex;
+  
+  
+  
+}
+
+.hero-wrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  
+}
+
+.arrow-1 {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow-2 {
+  position: absolute;
+  width: 350px;
+  top: 63%;
+  left: 87%;
+  transform: translate(-50%, -50%);
+}
+
+
+.arrow-tip-text {
+  
+  transform: translate(-50%, -50%);
+  font-family: 'Shadows Into Light', cursive;
+  color: #424242;
+  pointer-events: none;
+}
+.text1{
+  font-size: 3rem;
+  position: absolute;
+  top: 33%;
+  left: 130%;
+}
+
+.text2{
+  position: absolute;
+  top: 62%;
+  left: 105%;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  transform: rotate(-2deg);
+
+}
+
+.c-logo {
+  position: absolute;
+  width: 40px ;
+  height: auto;
+  top: 19%;
+  left: -3%;
+}
+.cpp-logo{
+  position: absolute;
+  width: 51px ;
+  height: auto;
+  top: 18%;
+  left: -23%;
+}
+:root {
+  --color-surface-white: #ffffff;
+  --color-text-gradient: linear-gradient(90deg, #e91e63, #2196f3);
+}
+
+/*   style added to align boxes for styling purposes - not necessary for */
+sup {
+  line-height: 0 
+}
+
+.line {
+  overflow: hidden;
+}
+/* ANIMATIONS */
+.arrow-path {
+  stroke-dasharray: 900;         /* Adjusted for better fit */
+  stroke-dashoffset: 900;
+  animation: draw-arrow 2s ease-out forwards;
+  /* Removed scaleY(-1) to prevent clipping */
+  transform-origin: bottom center;
+  animation-delay: 2s ;
+}
+.pfp{
+  opacity: 0;
+}
+
+
+.arrow-head {
+  opacity: 0;
+  animation: fade-in-arrow-head 0.6s 0.8s forwards;
+  animation-delay: 3s;
+}
+
+@keyframes fade-in-arrow-head {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes draw-arrow {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* RED ARROW */
+.red-arrow{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.red-arrow-1{
+   position: absolute;
+  width: 250px;
+  top: 8%;
+  left: 21%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.red-arrow-2{
+  top: 8%;
+  width: 330px;
+  left: 15%;
+  /* transform: scaleX(-1); */
+}
