@@ -21,7 +21,7 @@ gsap.fromTo(".pfp",
 gsap.set(".logo", { y: 0 });
 gsap.to(".shake",
   {
-    rotation: 9,
+    rotation: 4,
     duration: 1.6,
     repeat: -1,
     yoyo: true,
